@@ -70,16 +70,26 @@ Rails.application.routes.draw do
   #
   # INSTRUCTIONS:
   # For the following exercises, create a single controller called "ExercisesController"
+  # in the file controllers/exercises_controller.rb
   # Each of the exercises should be it's own action
 
 
   # 1. Write something about yourself and return it to the browser
 
+  #   - Create a controller action (method): "my_info"
+  #   - Create a route that maps localhost/my_info to ExercisesController#my_info
+  #   - render your name
+
+
   # 2. Random number generator
+  #   - Use the "rand" method to pick a random number and return it
 
   # 3. Print current time and date
 
-  # 4. Pick a random state from the given list
+  # 4. Pick a random state
+  #   - Create an array of all states
+  #   - Pick one randomly
+
 
   # 5. Fizzbuzz:
   #  This is the infamous fizzbuzz problem
@@ -101,6 +111,8 @@ Rails.application.routes.draw do
   # EXERCISES WITH PARAMS:
   # The following exercises require query params
   # eg. http://localhost:3000/my_url?param1=Hello&param2=World
+  #
+  # The examples for query params can be found in the section: "EXAMPLES FOR ROUTES AND CONTROLLERS"
 
   # 6. Get the value of a query param and return it to the browser (See Example 2 above)
 
@@ -129,6 +141,9 @@ Rails.application.routes.draw do
 
   # Pick a random state from the given list
   get 'answers/random_state', controller: 'completed_exercises', action: 'random_state'
+
+  # Fizz buzz
+  get 'answers/fizzbuzz', controller: 'completed_exercises', action: 'fizzbuzz'
 
 
 
