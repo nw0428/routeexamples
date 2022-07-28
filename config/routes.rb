@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-
-
+  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   # HTTP VERB EXAMPLES
   #
   # The word "Record" usually means an item in the database
@@ -35,9 +34,6 @@ Rails.application.routes.draw do
 
 
 
-
-
-
   # EXAMPLES FOR ROUTES AND CONTROLLERS
   # and how to execute ruby in a controller
 
@@ -63,13 +59,11 @@ Rails.application.routes.draw do
 
 
 
-
-
-
   # EXERCISES:
   #
   # INSTRUCTIONS:
   # For the following exercises, create a single controller called "ExercisesController"
+  # by calling `rails g controller exercises` on the command line
   # in the file controllers/exercises_controller.rb
   # Each of the exercises should be it's own action
 
@@ -90,8 +84,10 @@ Rails.application.routes.draw do
   #   - Create an array of all states
   #   - Pick one randomly
 
+  # 5. Open up test/controllers/example_controller_test.rb
+  # write tests for put, post, and delete to example1
 
-  # 5. Fizzbuzz:
+  # 6. Fizzbuzz:
   #  This is the infamous fizzbuzz problem
   #  All software devs should be comfortable solving this
   #  in an interview setting on a whiteboard
@@ -106,7 +102,8 @@ Rails.application.routes.draw do
   #  This code prints all numbers from 1 to 100, replacing the words
   #  that match the above rules
 
-
+  # 7. Tests:
+  # Write tests for each of the controller methods in exercises!
 
   # EXERCISES WITH PARAMS:
   # The following exercises require query params
@@ -114,17 +111,12 @@ Rails.application.routes.draw do
   #
   # The examples for query params can be found in the section: "EXAMPLES FOR ROUTES AND CONTROLLERS"
 
-  # 6. Get the value of a query param and return it to the browser (See Example 2 above)
+  # 1. Get the value of a query param and return it to the browser (See Example 2 above)
 
-  # 7. Add two numbers together (See Example 3 above)
+  # 2. Add two numbers together (See Example 3 above)
 
-  # 8. Check if two query params are equal
+  # 3. Check if two query params are equal
 
-  # 9. Check if query param is in an array
+  # 4. Check if query param is in an array
 
-  # Future Ideas:
-
-  # Select people by eye color (Hash)
-  # Select people by eye color (Class)
-  # Encode/decode cypher
 end

@@ -1,10 +1,10 @@
 class ExampleController < ApplicationController
   def example1
-    render plain:  2+2
+    render html:  2+2
   end
 
   def example2
-    render plain: params[:number]
+    render html: params[:number]
   end
 
   def example3

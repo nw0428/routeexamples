@@ -1,5 +1,4 @@
 class GamesController < ApplicationController
-
   OPTIONS = [ 'rock', 'paper', 'scissors' ]
 
   def rock_paper_scissors
